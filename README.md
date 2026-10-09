@@ -1,6 +1,6 @@
 # Hi, I'm Mohammad Tarek 👋
 
-**AI Software Engineer** · Computer Engineering student (Ain Shams University × University of East London, dual degree, class of 2027) · Cairo, Egypt
+**AI / Software Engineer** · Computer Engineering student (Ain Shams University × University of East London, dual degree, class of 2027) · Cairo, Egypt
 
 I build production AI systems end to end: RAG and knowledge-graph pipelines, multi-provider LLM backends, agentic workflows, and the infrastructure that ships them.
 
