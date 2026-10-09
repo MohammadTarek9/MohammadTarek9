@@ -31,7 +31,7 @@ Built a gRPC/Protobuf Backend for an internal testing framework and designed LLM
 
 ## 🔬 Research
 
-**Egyptian Arabic Retrieval Benchmark** · *with NVIDIA mentors*\
+**Egyptian Arabic Retrieval Benchmark** · *with NVIDIA*\
 The first retrieval benchmark for Egyptian Arabic, evaluating how embedding and reranking models (including NVIDIA Nemotron) handle dialect queries compared with Modern Standard Arabic.
 
 
