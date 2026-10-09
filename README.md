@@ -1,6 +1,6 @@
 # Hi, I'm Mohammad Tarek 👋
 
-**AI Systems Engineer** · Computer Engineering student (Ain Shams University × University of East London, dual degree, class of 2027) · Cairo, Egypt
+**AI Software Engineer** · Computer Engineering student (Ain Shams University × University of East London, dual degree, class of 2027) · Cairo, Egypt
 
 I build production AI systems end to end: RAG and knowledge-graph pipelines, multi-provider LLM backends, agentic workflows, and the infrastructure that ships them.
 
@@ -8,7 +8,7 @@ I build production AI systems end to end: RAG and knowledge-graph pipelines, mul
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:medoabdeen73@gmail.com)
 
 > [!NOTE]
-> **Most of my work isn't visible here.** The bulk of my professional code lives in private repositories on company-managed GitHub and GitLab accounts, so this profile shows only a small part of what I build. Happy to walk through architecture and code samples in an interview.
+> **Most of my work isn't visible here.** The bulk of my professional code lives in private repositories on company-managed GitHub and GitLab accounts, so this profile shows only a small part of what I build. Happy to discuss architectures and code samples.
 
 ---
 
@@ -26,17 +26,16 @@ An orchestration platform for AI coding agents (Claude Code, Codex) across multi
 **Enterprise Agentic GraphRAG** · *Valeo*\
 An agentic RAG chatbot over millions of engineering work items. It uses a JSON-LD knowledge-graph pipeline, Gemini CLI subagents with custom MCP tools to build graphs from heterogeneous documents, and hybrid vector + graph retrieval.
 
-**LLM Evaluation & Security Testing** · *Siemens EDA*\
-250+ LLM security test cases, automated evaluation of fine-tuned LLMs with Langfuse, a REST → gRPC migration, and an LLM mock server for repeatable testing.
+**Internal Testing Framework for a Formal Verification AI System** · *Siemens EDA*\
+Built a gRPC/Protobuf Backend for an internal testing framework and designed LLM functional and security test cases.
 
 ## 🔬 Research
 
 **Egyptian Arabic Retrieval Benchmark** · *with NVIDIA mentors*\
 The first retrieval benchmark for Egyptian Arabic, evaluating how embedding and reranking models (including NVIDIA Nemotron) handle dialect queries compared with Modern Standard Arabic.
 
-**Graduation project:** a Sovereign Multilingual RAG system for Egyptian Arabic dialects.
 
-## 📂 Public projects
+## 📂 Selected Public projects
 
 - **Research Paper Intelligence Engine:** multi-document RAG with hybrid retrieval (Pinecone + BM25 + RRF), LangChain ReAct agents and citation-aware answers
 - **Distributed LLM Inference Engine:** LLM + RAG serving with Nginx load balancing, Qdrant retrieval and Dockerized services
@@ -52,4 +51,4 @@ The first retrieval benchmark for Egyptian Arabic, evaluating how embedding and 
 
 ---
 
-💬 Open to AI / ML systems engineering roles. Reach me on [LinkedIn](https://www.linkedin.com/in/mohammad-tarek-302277315/) or by [email](mailto:medoabdeen73@gmail.com).
+💬 Open to AI / Software Engineering Roles. Reach me on [LinkedIn](https://www.linkedin.com/in/mohammad-tarek-302277315/) or by [email](mailto:medoabdeen73@gmail.com).
