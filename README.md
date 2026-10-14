@@ -12,22 +12,54 @@ I build production AI systems end to end: RAG and knowledge-graph pipelines, mul
 
 ---
 
-## 🔧 What I've built
+## 💼 Work Experience
 
-**ContentMorph** · [contentmorph.ai](https://contentmorph.ai/) · *BIAMI.io*\
-Sole engineer on a SaaS that turns one source (blog URL, YouTube video, PDF, transcript…) into publish-ready content for 125+ channels in a single API call. I took it from an empty repo to a live, paid production service in 6 weeks.
-- A distributed pipeline of six independently scaling workers (text, image, video, PDF, audio, cron)
-- A multi-provider AI layer over 5+ vendors with circuit breakers, fallback chains and live cost metering
-- Usage-based Stripe billing, a ~3,300-test backend suite, and end-to-end DevOps
+### Software Engineer · [BIAMI.io](https://biami.io) · *Aug 2026 – Oct 2026*
 
-**10XFactory** · *BIAMI.io*\
-An orchestration platform for AI coding agents (Claude Code, Codex) across multi-repo projects. It has isolated task workspaces, verification gates that block unchecked work, and audit trails for agent activity.
+**ContentMorph** · [contentmorph.ai](https://contentmorph.ai/)\
+Sole engineer on a SaaS that turns one source (note, blog URL, YouTube video, transcript, PDF…) into publish-ready content for 125+ channels in a single API call, through a web app and a public API. I designed, built and deployed all of it: backend, web app, marketing site, infrastructure and billing.
+- Took the product from an empty repo to a **live, paid production service in 6 weeks**
+- A distributed pipeline of **six independently scaling workers** (text, image, video, PDF, audio, cron), so a slow video render never delays cheap text or image jobs
+- A **multi-provider AI layer over 5+ vendors** (OpenAI, Anthropic, Gemini, ElevenLabs, xAI, FLUX) with circuit breakers, fallback chains, per-channel model overrides and live cost metering
+- Cut AI cost by running **one comprehension pass per request** and reusing it across every channel instead of one LLM call per channel
+- **Usage-based billing on Stripe** with prepaid credits, card management, live payments and transaction history
+- A **~3,300-test backend suite** plus frontend unit and end-to-end tests
+- Security: same-origin `__Host-` session cookies, layered CSRF and origin checks, API-key auth and rate limiting at the APISIX gateway
+- Ran DevOps end to end: Dockerized dev and production VPS environments, gated releases and database migrations
 
-**Enterprise Agentic GraphRAG** · *Valeo*\
-An agentic RAG chatbot over millions of engineering work items. It uses a JSON-LD knowledge-graph pipeline, Gemini CLI subagents with custom MCP tools to build graphs from heterogeneous documents, and hybrid vector + graph retrieval.
+`Python` `FastAPI` `PostgreSQL` `Redis/arq` `React` `TypeScript` `TanStack Query` `Tailwind` `Docker Compose` `nginx` `APISIX` `Stripe` `Cloudflare R2` `ffmpeg` `WeasyPrint`
 
-**Internal Testing Framework for a Formal Verification AI System** · *Siemens EDA*\
-Built a gRPC/Protobuf Backend for an internal testing framework and designed LLM functional and security test cases.
+**10XFactory**\
+A platform that coordinates AI coding agents (Claude Code, Codex) across multi-repository projects, from planning to deployment, with human approval gates.
+- Developed agent workflows for planning, implementation, testing and delivery, with **isolated task workspaces** (git worktrees) and verification before merge
+- **Strengthened verification** so tasks can't pass without running their checks; made type checking and linting blocking checks
+- Recorded per-check output, exit codes and run times so reviewers can **audit agent activity**
+- Contributed to **release verification** that only deploys verified, human-merged revisions
+- Wrote and maintained shell test suites for task isolation, hotfixes and deployment workflows
+
+`Bash` `Node.js` `Git worktrees` `Docker Compose` `GitHub` `Claude Code` `Codex`
+
+### AI Engineer · Valeo · *Jul 2026 – Aug 2026*
+
+An agentic AI chatbot that helps employees search, track and navigate work items and technical documents across the organization.
+- Built **knowledge-graph RAG** that models relationships between work items (requirements, design documents, test cases) for relationship-aware querying
+- Built an automated preprocessing pipeline that cleans and structures **millions of work items** into **JSON-LD** for graph ingestion
+- Designed an end-to-end agentic pipeline using **Gemini CLI subagents, custom MCP tools and Skills** to build unified knowledge graphs from PDF, CSV, XLSX, TXT and DOCX, combined with a vector database for hybrid retrieval
+- Integrated the local and centralized versions of the tool behind one API, with no extra configuration for users
+- Built an **MCP tool** that exposes the whole chatbot inside Gemini CLI
+- Contributed to an organization-wide **on-premises LLM platform**: evaluating open-source models, deployment strategies and hardware options
+
+`Python` `Gemini CLI` `MCP` `Knowledge Graphs` `JSON-LD` `Neo4j` `Vector DBs`
+
+### Software QA Engineer · Siemens EDA · *Jul 2025 – Dec 2025*
+
+- Built a **gRPC/Protobuf backend** for an internal AI testing framework, migrated from REST
+- Designed and ran **250+ LLM security test cases** to benchmark model safety and prevent sensitive-data leakage
+- Automated the evaluation pipeline for **two fine-tuned LLMs** and integrated **Langfuse** for logging and visualizing results
+- Built an **LLM mock server** for isolated, repeatable testing of AI components
+- Resolved **Conan C++ dependency issues** for a formal verification tool and built a GitLab-integrated **Artifactory cleanup tool**
+
+`Python` `gRPC` `Protobuf` `Langfuse` `C++` `Conan` `CMake` `GitLab` `JFrog Artifactory`
 
 ## 🔬 Research
 
